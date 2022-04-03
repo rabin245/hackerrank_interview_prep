@@ -65,6 +65,11 @@
 
 
 a = [1, 2, 3, 4, 5]
-a = list(a)
-b = a[3:] + a[:3]
-print(b)
+for i, j in enumerate(a):
+    print(i, j)
+# a = list(a)
+# b = a[3:] + a[:3]
+# print(b)
+
+# b = -2
+# print(abs(b))
