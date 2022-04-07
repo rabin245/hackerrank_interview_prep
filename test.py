@@ -64,12 +64,22 @@
 # print(max)
 
 
-a = [1, 2, 3, 4, 5]
-for i, j in enumerate(a):
-    print(i, j)
+# a = [1, 2, 3, 4, 5]
+# for i, j in enumerate(a):
+#     print(i, j)
 # a = list(a)
 # b = a[3:] + a[:3]
 # print(b)
 
 # b = -2
 # print(abs(b))
+# x = [1, 2, 3, 4, 5, 6, 7]
+# s, e = 1, 4
+
+
+# x, y = list(map(int, input().split()))
+# test = [list(map(int, input().split())) for i in range(x)]
+# print(x, y)
+test = [[2, 5, 4], [3, 7, 8, 9], [5, 5, 6, 8, 9, 10]]
+
+print(type(*test))
