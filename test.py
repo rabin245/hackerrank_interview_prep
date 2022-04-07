@@ -80,6 +80,33 @@
 # x, y = list(map(int, input().split()))
 # test = [list(map(int, input().split())) for i in range(x)]
 # print(x, y)
-test = [[2, 5, 4], [3, 7, 8, 9], [5, 5, 6, 8, 9, 10]]
+# test = [[2, 5, 4], [3, 7, 8, 9], [5, 5, 6, 8, 9, 10]]
 
-print(type(*test))
+# print(type(*test))
+# n = 10
+# # for i in range(n):
+# #     if i > 3:
+# #         n = n-1
+# #     print(i, n)
+# i = 0
+# while i < n:
+#     if i > 3:
+#         n = n-1
+#     print(i, n)
+#     i += 1
+
+# a = ['a', 'b', 'c', 'd', 'e']
+# i = 0
+# while i < len(a):
+#     print(a[i])
+#     if a[i] == 'c':
+#         a.remove(a[i])
+#         i -= 1
+#     print(i, a[i], a)
+#     i += 1
+a = 'showman'
+b = 'womanm'
+x = [element for element in a if element in b]
+y = [element for element in b if element in a]
+print(x)
+print(y)
