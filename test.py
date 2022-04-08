@@ -104,9 +104,46 @@
 #         i -= 1
 #     print(i, a[i], a)
 #     i += 1
-a = 'showman'
-b = 'womanm'
-x = [element for element in a if element in b]
-y = [element for element in b if element in a]
-print(x)
-print(y)
+# a = 'showman'
+# b = 'womanm'
+# x = [element for element in a if element in b]
+# y = [element for element in b if element in a]
+# print(x)
+# print(y)
+
+# x = dict()
+# x[1] = 2
+# x[2] = 12
+# if(x[3] == 1):
+#     print('yes')
+# else:
+#     print('no')
+# print(x)
+
+# s = 'aabbccdddd'
+# dic = {}
+# for c in s:
+#     if c in dic:
+#         dic[c] += 1
+#     else:
+#         dic[c] = 1
+# print(dic)
+# l = list(set(dic.values()))
+# print(l)
+# if len(l) == 1:
+#     print("YES")
+# elif len(l) == 2:
+#     l1 = []
+#     l2 = []
+#     for key in dic.keys():
+#         val = dic[key]
+#         if val == l[0]:
+#             l1.append(key)
+#         if val == l[1]:
+#             l2.append(key)
+#     if len(l1) == 1 or len(l2) == 1:
+#         print("YES")
+#     else:
+#         print("NO")
+# else:
+#     print("NO")
