@@ -147,3 +147,88 @@
 #         print("NO")
 # else:
 #     print("NO")
+
+# a = 'cd'
+# c = 'cd'
+
+# if (a == c == 'cd'):
+#     print('yes')
+# else:
+#     print('no')
+
+# test = {'abc': 1}
+# x = 'abc'
+# if x not in test:
+#     test[x] = 1
+# else:
+#     test[x] += 1
+# print(test)
+# x = dict()
+# s = 'aaaa'
+# n = len(s)
+# for i in range(2, n+1):
+#     for j in range(n):
+#         if (j+i) <= n:
+#             z = s[j:j+i]
+#             print(z)
+#             if(z not in x):
+#                 x[z] = 1
+#             else:
+#                 x[z] += 1
+#         else:
+#             break
+# print(x)
+
+# s = 'aaabaa'
+# n = len(s)
+# l = []
+# count = 0
+# cur = None
+
+# # 1st pass
+# for i in range(n):
+#     if s[i] == cur:
+#         count += 1
+#     else:
+#         if cur is not None:
+#             l.append((cur, count))
+#         cur = s[i]
+#         count = 1
+# l.append((cur, count))
+
+# print(l)
+
+# from itertools import groupby
+# s = 'aabcddeeeeaa'
+# for x, y in groupby(s):
+#     print(x, sum(1 for i in y))
+
+def func(x, y):
+    m = len(x)
+    n = len(y)
+    # m = 4
+    # n = 2
+
+    c = [[0 for j in range(n+1)] for i in range(0, m+1)]
+    b = [['' for j in range(n+1)] for i in range(0, m+1)]
+    # print(c)
+    for i in range(0, m):
+        for j in range(0, n):
+            if(x[i] == y[j]):
+                c[i][j] = c[i-1][j-1]+1
+                b[i][j] = 'upleft'
+
+            elif c[i-1][j] >= c[i][j-1]:
+                c[i][j] = c[i-1][j]
+                b[i][j] = 'up'
+            else:
+                c[i][j] = c[i][j-1]
+                b[i][j] = 'left'
+
+    print(b)
+    print(c)
+
+
+x = 'ABCD'
+y = 'ABDC'
+func(x, y)
