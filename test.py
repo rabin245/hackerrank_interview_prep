@@ -241,9 +241,20 @@
 # if b not in c:
 #     print('working')
 
-temp = list()
-x = 'x'
+# temp = list()
+# x = 'x'
 
-temp.append('a'*6)
-temp.append((x*(len(temp[0])-2)+'yz'))
+# temp.append('a'*6)
+# temp.append((x*(len(temp[0])-2)+'yz'))
+# print(temp)
+
+temp = [[0 for i in range(4)] for j in range(4)]
 print(temp)
+
+temp[0] = [1, 2, 3, 4]
+temp[1] = [2, 3, 4, 1]
+temp[2] = [3, 4, 2, 3]
+temp[3] = [3, 4, 1, 2]
+
+x = max(temp)
+print(x)
