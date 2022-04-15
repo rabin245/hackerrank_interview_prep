@@ -203,32 +203,47 @@
 # for x, y in groupby(s):
 #     print(x, sum(1 for i in y))
 
-def func(x, y):
-    m = len(x)
-    n = len(y)
-    # m = 4
-    # n = 2
+# def func(x, y):
+#     m = len(x)
+#     n = len(y)
+#     # m = 4
+#     # n = 2
 
-    c = [[0 for j in range(n+1)] for i in range(0, m+1)]
-    b = [['' for j in range(n+1)] for i in range(0, m+1)]
-    # print(c)
-    for i in range(0, m):
-        for j in range(0, n):
-            if(x[i] == y[j]):
-                c[i][j] = c[i-1][j-1]+1
-                b[i][j] = 'upleft'
+#     c = [[0 for j in range(n+1)] for i in range(0, m+1)]
+#     b = [['' for j in range(n+1)] for i in range(0, m+1)]
+#     # print(c)
+#     for i in range(0, m):
+#         for j in range(0, n):
+#             if(x[i] == y[j]):
+#                 c[i][j] = c[i-1][j-1]+1
+#                 b[i][j] = 'upleft'
 
-            elif c[i-1][j] >= c[i][j-1]:
-                c[i][j] = c[i-1][j]
-                b[i][j] = 'up'
-            else:
-                c[i][j] = c[i][j-1]
-                b[i][j] = 'left'
+#             elif c[i-1][j] >= c[i][j-1]:
+#                 c[i][j] = c[i-1][j]
+#                 b[i][j] = 'up'
+#             else:
+#                 c[i][j] = c[i][j-1]
+#                 b[i][j] = 'left'
 
-    print(b)
-    print(c)
+#     print(b)
+#     print(c)
 
 
-x = 'ABCD'
-y = 'ABDC'
-func(x, y)
+# x = 'ABCD'
+# y = 'ABDC'
+# func(x, y)
+
+# a = 'give'
+# b = 'Give'
+# c = dict()
+# c[a] = 1
+# # print(c)
+# if b not in c:
+#     print('working')
+
+temp = list()
+x = 'x'
+
+temp.append('a'*6)
+temp.append((x*(len(temp[0])-2)+'yz'))
+print(temp)
