@@ -1,6 +1,3 @@
-from itertools import count
-
-
 def makeAnagram(a, b):
     # initial
     # count = 0

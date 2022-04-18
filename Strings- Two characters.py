@@ -37,4 +37,7 @@ def alternate(s):
 # s = 'abaacdabd'
 # s = 'abcabfacb'
 s = 'acbab'
+# s = 'asdcbsdcagfsdbgdfanfghbsfdab'
+# s = 'asvkugfiugsalddlasguifgukvsa'
+# s = 'beabeefeab'
 alternate(s)
